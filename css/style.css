@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
   font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
 }
 
 :root {
@@ -26,8 +27,36 @@ body {
 }
 
 header {
-  width: 1440px;
+  max-width: 1440px;
   height: 79px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header nav img {
+  width: 61px;
+  height: 19px;
+  margin-top: 30px;
+}
+
+header nav .hug {
+  width: 245px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.hug a {
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .section-title {
