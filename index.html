@@ -27,18 +27,56 @@
 
   <body>
     <div class="main-container">
+      <!-- Header -->
+
       <header>
+        <img src="images/logo/Booki.png" alt="Logo Booki" />
         <nav>
-          <img src="images/logo/Booki.png" alt="Logo Booki" />
-          <div class="hug">
-            <a href="#">Hébergements</a>
-            <a href="#">Activités</a>
-          </div>
+          <a href="#hebergements-marseille">Hébergements</a>
+          <a href="#activites">Activités</a>
         </nav>
       </header>
       <main>
+        <!--  section info ou div infos -->
+
+        <section class="infos">
+          <div class="info-title">
+            <h2 class="section-title">
+              Trouvez votre hébergement pour des vacances de rêve
+            </h2>
+            <p>En plein centre-ville ou en pleine nature</p>
+          </div>
+          <div class="search">
+            <form action="">
+              <i class="fa-solid fa-location-dot"></i>
+              <input type="text" value="Marseille, France" />
+              <button>Rechercher</button>
+            </form>
+          </div>
+
+          <div class="filtres">
+            <ul>
+              <li>Filtres</li>
+              <li>
+                <button>
+                  <i class="fa-solid fa-money-bill-wave"></i>Economique
+                </button>
+              </li>
+              <li><i class="fa-solid fa-person"></i>Familial</li>
+              <li><i class="fa-solid fa-heart"></i> Romantique</li>
+              <li><i class="fa-solid fa-fire"></i>Nos pépites</li>
+            </ul>
+            <i class="fa-solid fa-circle-info"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          </div>
+        </section>
+        <!-- hebergements et populaires-->
+
         <div class="hebergements-and-populaires">
-          <section class="hebergements"></section>
+          <section class="hebergements">
+            <!-- mettre ici les hebergements-->
+          </section>
+
           <section class="populaires">
             <div class="populaires-title">
               <h2 class="section-title">Les plus populaires</h2>
