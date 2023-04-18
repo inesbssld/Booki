@@ -77,6 +77,104 @@ nav a:hover {
   margin: 0;
   font-size: 22px;
 }
+.info-title p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.search form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 377px;
+  height: 49px;
+  margin-top: 35px;
+}
+.search .fa-solid {
+  width: 50px;
+  height: 49px;
+  color: black;
+  border: 1px solid #f2f2f2;
+  background: #f2f2f2;
+  border-radius: 15px 0px 0px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search input {
+  height: 49px;
+  width: 195px;
+  border: 1px solid #f2f2f2;
+  text-align: center;
+}
+
+.search input::placeholder {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.search button {
+  width: 132px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #0065fc;
+  color: white;
+  padding: 15px 16px 15px 18px;
+  border-radius: 0 15px 15px 0;
+  border: none;
+}
+
+.filtres ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 35px;
+  align-items: center;
+  width: 758px;
+  height: 50px;
+  padding: 0;
+  gap: 15px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.filtres ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 19px;
+  gap: 10px;
+
+  height: 50px;
+  border: 2px solid #d9d9d9;
+  border-radius: 25px;
+}
+
+.filtres ul li a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.filtres ul li:hover {
+  background-color: #deebff;
+}
+
+.infobar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.infobar .fa-solid {
+  width: 24px;
+  height: 24px;
+  color: #0065fc; /* Couleur de l'icône */
+  background-color: white; /* Couleur de fond */
+  border: 1px solid #d9d9d9; /* Bordure ronde de 1px en #d9d9d9 */
+  border-radius: 50%;
+}
 
 .card {
   background-color: white;
