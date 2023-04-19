@@ -72,6 +72,9 @@ nav a:hover {
 }
 
 /* SECTION INFOS*/
+.infos {
+  margin-bottom: 37px;
+}
 
 .section-title {
   margin: 0;
@@ -112,6 +115,7 @@ nav a:hover {
   font-size: 18px;
   font-weight: 700;
   color: #000000;
+  outline: none;
 }
 
 .search button {
@@ -176,6 +180,75 @@ nav a:hover {
   border-radius: 50%;
 }
 
+/* SECTION HEBERGEMENT */
+
+.hebergements .section-title {
+  margin-bottom: 30px;
+}
+.hebergements-marseille,
+.hebergements-marseille-bis {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hebergements-marseille .card,
+.hebergements-marseille-bis .card {
+  width: 250px;
+  height: 207px;
+  padding: 0px 0px 15px;
+}
+
+.hebergements-marseille .card img,
+.hebergements-marseille-bis .card img {
+  height: 124px;
+  width: 250px;
+  border-radius: 20px 20px 0px 0px;
+  border: 5px solid #ffffff;
+}
+
+.hebergements-marseille .card-content,
+.hebergements-marseille-bis .card-content {
+  width: 67%;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.hebergements-marseille .card-title,
+.hebergements-marseille-bis .card-title {
+  margin-top: 5px;
+  margin-bottom: 4px;
+}
+
+.hebergements-marseille .card-subtitle,
+.hebergements-marseille-bis .card-subtitle {
+  margin: 0;
+}
+
+.hebergements-marseille .card-rating,
+.hebergements-marseille-bis .card-rating {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+/*hebergements marseille bis */
+.hebergements-marseille-bis {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.hebergements h3 {
+  margin-bottom: 0;
+}
+
+.canebiere {
+  width: 175px;
+}
 .card {
   background-color: white;
   border-radius: 20px;
@@ -208,7 +281,7 @@ nav a:hover {
 .hebergements-and-populaires section {
   background-color: var(--main-bg-color);
   border-radius: 20px;
-  padding: 30px;
+  padding: 30px 30px 20px 30px;
   box-sizing: border-box;
 }
 
@@ -260,6 +333,84 @@ nav a:hover {
 
 .populaires-cards .card-rating {
   margin-bottom: 5px;
+}
+
+/* ACTIVITES*/
+.activites {
+  width: 1340px;
+  height: 560px;
+  padding-top: 35px;
+}
+
+.activites-title {
+  margin-left: 30px;
+}
+.activites-content {
+  width: 1280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.description-activites {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0px;
+
+  width: 297.5px;
+  height: 439px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  border-radius: 20px;
+}
+
+.description-activites h5 {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.description-activites img {
+  width: 300px;
+  height: 380px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/*FOOTER*/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 1340px;
+  height: 163px;
+
+  background: #f2f2f2;
+}
+
+footer .infos-sup {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 446px;
+  height: 163px;
+  padding: 20px;
+}
+
+footer .infos-sup a {
+  text-decoration: none;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  padding-top: 15px;
+}
+
+footer .hosting .infos-sup {
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
