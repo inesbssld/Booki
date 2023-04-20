@@ -56,7 +56,7 @@ header nav {
 
 nav a {
   font-size: 16px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 18px;
   text-decoration: none;
   color: #000000;
@@ -64,7 +64,7 @@ nav a {
 }
 nav a:hover {
   font-size: 16px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 18px;
   text-decoration: none;
   color: #0065fc;
@@ -115,7 +115,7 @@ nav a:hover {
   font-size: 18px;
   font-weight: 700;
   color: #000000;
-  outline: none;
+  outline: none !important;
 }
 
 .search button {
@@ -148,10 +148,17 @@ nav a:hover {
   align-items: center;
   padding: 4px 19px;
   gap: 10px;
-
   height: 50px;
   border: 2px solid #d9d9d9;
   border-radius: 25px;
+}
+
+.filtres ul li:first-child {
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 0px;
+  padding: 0;
 }
 
 .filtres ul li a {
@@ -162,6 +169,10 @@ nav a:hover {
 
 .filtres ul li:hover {
   background-color: #deebff;
+}
+
+.filtres ul li:first-child:hover {
+  background-color: transparent;
 }
 
 .infobar {
@@ -196,7 +207,8 @@ nav a:hover {
 
 .hebergements-marseille .card,
 .hebergements-marseille-bis .card {
-  width: 250px;
+  width: 31%;
+  /*width: 250px;*/
   height: 207px;
   padding: 0px 0px 15px;
 }
@@ -204,14 +216,16 @@ nav a:hover {
 .hebergements-marseille .card img,
 .hebergements-marseille-bis .card img {
   height: 124px;
-  width: 250px;
+  width: 100%;
+  /*width: 250px;*/
   border-radius: 20px 20px 0px 0px;
   border: 5px solid #ffffff;
 }
 
 .hebergements-marseille .card-content,
 .hebergements-marseille-bis .card-content {
-  width: 67%;
+  width: 100%;
+
   padding-left: 15px;
   display: flex;
   flex-direction: column;
@@ -225,9 +239,23 @@ nav a:hover {
   margin-bottom: 4px;
 }
 
+@media (max-width: 1135px) {
+  .hebergements-marseille .card-title,
+  .hebergements-marseille-bis .card-title {
+    margin-top: 0px;
+    margin-bottom: 4px;
+  }
+
+  .hebergements-marseille .card-content,
+  .hebergements-marseille-bis .card-content {
+    padding-left: 4px;
+  }
+}
+
 .hebergements-marseille .card-subtitle,
 .hebergements-marseille-bis .card-subtitle {
   margin: 0;
+  font-size: 0.875em;
 }
 
 .hebergements-marseille .card-rating,
@@ -247,7 +275,7 @@ nav a:hover {
 }
 
 .canebiere {
-  width: 175px;
+  width: 100%;
 }
 .card {
   background-color: white;
@@ -261,7 +289,7 @@ nav a:hover {
 }
 
 .card-title {
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .euro {
@@ -337,16 +365,17 @@ nav a:hover {
 
 /* ACTIVITES*/
 .activites {
-  width: 1340px;
+  width: 97%;
   height: 560px;
   padding-top: 35px;
+  margin: 0 auto;
 }
 
 .activites-title {
   margin-left: 30px;
 }
 .activites-content {
-  width: 1280px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -359,7 +388,7 @@ nav a:hover {
   justify-content: flex-end;
   padding: 0px;
 
-  width: 297.5px;
+  width: 23%;
   height: 439px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   border-radius: 20px;
@@ -371,9 +400,10 @@ nav a:hover {
 }
 
 .description-activites img {
-  width: 300px;
+  width: 100%;
   height: 380px;
   border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
 }
 
 /*FOOTER*/
@@ -384,7 +414,7 @@ footer {
   align-items: flex-start;
   padding: 0px;
 
-  width: 1340px;
+  width: 100%;
   height: 163px;
 
   background: #f2f2f2;
@@ -408,9 +438,6 @@ footer .infos-sup a {
   line-height: 19px;
   color: #000000;
   padding-top: 15px;
-}
-
-footer .hosting .infos-sup {
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -447,6 +474,49 @@ footer .hosting .infos-sup {
 
   .populaires-cards .card-subtitle {
     font-size: 13px;
+  }
+
+  /*activites*/
+  .activites {
+    width: 100%;
+    height: auto;
+    padding-top: 35px;
+  }
+
+  .activites-content {
+    width: 100%;
+    padding: 30px 0px;
+  }
+  .description-activites {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0px;
+    align-items: center;
+    width: 25%;
+    height: auto;
+  }
+
+  .description-activites img {
+    width: 90%;
+    height: 250px;
+  }
+
+  .description-activites h5 {
+    margin-left: 0px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 100%;
+  }
+
+  footer .infos-sup {
+    width: 33%;
   }
 }
 
