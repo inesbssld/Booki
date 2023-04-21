@@ -209,7 +209,7 @@ nav a:hover {
 .hebergements-marseille-bis .card {
   width: 31%;
   /*width: 250px;*/
-  height: 207px;
+  height: 208px;
   padding: 0px 0px 15px;
 }
 
@@ -225,8 +225,8 @@ nav a:hover {
 .hebergements-marseille .card-content,
 .hebergements-marseille-bis .card-content {
   width: 100%;
-
   padding-left: 15px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -239,10 +239,14 @@ nav a:hover {
   margin-bottom: 4px;
 }
 
+.neutral-star {
+  opacity: 0;
+}
+/*
 @media (max-width: 1135px) {
   .hebergements-marseille .card-title,
   .hebergements-marseille-bis .card-title {
-    margin-top: 0px;
+    margin-top: -2px;
     margin-bottom: 4px;
   }
 
@@ -251,7 +255,7 @@ nav a:hover {
     padding-left: 4px;
   }
 }
-
+*/
 .hebergements-marseille .card-subtitle,
 .hebergements-marseille-bis .card-subtitle {
   margin: 0;
