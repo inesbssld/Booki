@@ -80,6 +80,7 @@ nav a:hover {
 .section-title {
   margin: 0;
   font-size: 22px;
+  font-weight: 700;
 }
 .info-title p {
   font-size: 16px;
@@ -204,6 +205,7 @@ nav a:hover {
 
 .hebergements .section-title {
   margin-bottom: 30px;
+  font-weight: 700;
 }
 .hebergements-marseille,
 .hebergements-marseille-bis {
@@ -387,7 +389,7 @@ color:#000000;
 }
 
 .activites-title {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 .activites-content {
   width: 100%;
