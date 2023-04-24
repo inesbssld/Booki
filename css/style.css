@@ -110,13 +110,14 @@ nav a:hover {
   width: 195px;
   border: 1px solid #f2f2f2;
   text-align: center;
+  outline: none;
 }
 
 .search input::placeholder {
   font-size: 18px;
   font-weight: 700;
   color: #000000;
-  outline: none !important;
+
 }
 
 .search button {
@@ -248,7 +249,8 @@ nav a:hover {
 }
 
 .neutral-star {
-  opacity: 0;
+color:#f2f2f2;
+  background: #F2F2F2;
 }
 
 @media (max-width: 1135px) {
@@ -304,6 +306,13 @@ nav a:hover {
 
 .neutralStar {
   color: var(--main-bg-color);
+}
+
+.hebergements h3 a {
+text-decoration: none;
+  font-weight: 700;
+font-size: 18px;
+color:#000000;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -394,7 +403,16 @@ nav a:hover {
   flex-direction: column;
   justify-content: flex-end;
   padding: 0px;
+ width: calc((100% - 90px)/4); /* ça marche !*/
+  /* proposition romain
   flex: 1 0 23%;
+  */
+
+  /* problème lorsqu'on réduit à 1025
+  le gap est trop important donc ça dépase : mettre le gap en % ?
+  comment le calculer ?*
+
+  /*flex: 1 0 0; là c'est bien mais ça bouge le css pour inférieur à 1024px*/
 
   /*width: 23%;*/
   height: 439px;
