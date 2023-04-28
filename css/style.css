@@ -284,10 +284,6 @@ nav a:hover {
   margin-bottom: 0;
 }
 
-.canebiere {
-  width: 100%;
-}
-
 .card {
   background-color: white;
   border-radius: 20px;
@@ -361,20 +357,13 @@ nav a:hover {
 
 /*lien populaire card*/
 
-.populaires-cards a.lien-populaires-card {
-  width: calc((100% - 90px) / 3);
-  text-decoration: none;
-  color: #000000;
-}
-
 a.lien-populaires-card {
   text-decoration: none;
   color: #000000;
 }
 
 .populaires-cards .card-content {
-  /*width: 67%; avant */
-  width: 100%;
+  width: 67%;
   padding-left: 15px;
   display: flex;
   flex-direction: column;
@@ -408,17 +397,15 @@ a.lien-populaires-card {
   margin-left: 10px;
 }
 .activites-content {
-  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
+
   padding-top: 30px;
   gap: 30px;
 }
 
 .activites-content a.lien-description-activites {
-  width: calc((100% - 90px) / 4);
+  width: 100%;
+  /*width: calc((100% - 90px) / 4);*/
   text-decoration: none;
   color: #000000;
   font-weight: 700;
@@ -436,7 +423,7 @@ a.lien-populaires-card {
   border-radius: 20px;
 }
 
-.description-activites h5 {
+.description-activites h3 {
   margin-left: 19px;
   margin-top: 20px;
   font-size: 1em;
@@ -500,22 +487,29 @@ footer .infos-sup a {
 /****** Media queries ***********/
 
 @media (max-width: 1210px) {
+  .hebergements-marseille a.lien-card,
+  .hebergements-marseille-bis a.lien-card {
+    width: calc((100% - 30px) / 3);
+  }
   .hebergements-marseille .card img,
   .hebergements-marseille-bis .card img {
     height: 114px;
   }
-  .activites-content a.lien-description-activites {
-    width: calc((100% - 40px) / 4);
-    text-decoration: none;
-    color: #000000;
-    font-weight: 700;
-    font-size: 14px;
+  .activites-content {
+    gap: 18px;
   }
   .activites-content
     a.lien-description-activites:nth-child(3)
     .description-activites
-    h5 {
+    h3,
+  .activites-content
+    a.lien-description-activites:nth-child(4)
+    .description-activites
+    h3 {
     margin-left: 5px;
+  }
+  .activites-content a.lien-description-activites .description-activites h3 {
+    font-size: 15px;
   }
 }
 
